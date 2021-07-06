@@ -1,0 +1,48 @@
+.ul-in-header {
+    @include display-flex(row);
+    justify-content: space-between;
+    align-items: center;
+}
+
+li{
+    margin: $twenty-px $forty-px;   
+    margin-right: 100px;
+    font-size: 17px;
+   }
+
+.music-img {
+    height: $forty-px;
+    width: $forty-px;
+    display: $block-line;
+    
+}
+
+
+.second-li-in-header{
+    margin-right: $auto-display;
+    display: $block-line;
+    margin-left: -70px;
+    transform: skew(10deg, 5deg);
+    box-shadow: 5px 5px 5px salmon;
+    background-color: rgb(240, 168, 168);
+    border-radius: 6px;
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+}
+
+
+
+.body-without-header{
+    @include display-flex(column);
+
+    *{
+        margin: $auto-display;
+    }
+    
+}
+
+
+
+
+
