@@ -1,0 +1,56 @@
+.boxes-section{
+    @include display-flex(row);
+    width: 68%;
+    margin: 0 $auto-display;
+    margin-top: 20px;
+    
+    div{
+        border: solid black 1px;
+        border-radius: 3px;
+        height: 330px;
+        width: 31%;
+        margin: 0 $auto-display;
+
+
+        h3{
+            background-color: $light-grey;
+            padding: 20px 10px;
+            text-align: center;
+            font-family: $headers-font;
+            font-weight: 100;
+        }
+
+        div{
+            margin-top: 20px;
+            border: none;
+            width: 100%;
+            text-align: center;
+            
+
+            .money{
+                font-size: 30px;
+                font-family: $headers-font;
+                margin-bottom: 20px;
+            }
+
+            ul{
+                li{
+                    margin: 15px;
+                }
+            }
+
+            button{
+                @include button-color-hover;
+                margin-top: $twenty-px;
+                padding: 10px 12px;
+                font-size: 15px;
+               
+            }
+        }
+
+     
+        
+
+    }
+    
+}

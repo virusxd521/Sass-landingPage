@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,29 +53,31 @@ table {
   border-spacing: 0;
 }
 
+html body {
+  height: 100%;
+}
+
+body {
+  background-color: #dadada;
+  display: flex;
+  flex-direction: column;
+}
+
 .ul-in-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-
-li {
+.ul-in-header li {
   margin: 20px 40px;
   margin-right: 100px;
   font-size: 17px;
 }
-
-.music-img {
-  height: 40px;
-  width: 40px;
-  display: inline-block;
-}
-
-.second-li-in-header {
+.ul-in-header .second-li-in-header {
   margin-right: auto;
   display: inline-block;
-  margin-left: -70px;
+  margin-left: -75px;
   transform: skew(10deg, 5deg);
   box-shadow: 5px 5px 5px salmon;
   background-color: #f0a8a8;
@@ -84,17 +87,25 @@ li {
   padding: 10px;
 }
 
+.music-img {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+}
+
 .body-without-header {
   display: flex;
   flex-direction: column;
-}
-.body-without-header * {
-  margin: auto;
+  flex: 1 0 auto;
 }
 
+.form-section {
+  margin: 0 auto;
+}
 .form-section h1 {
   font-size: 25px;
   padding-bottom: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
 .the-form {
@@ -102,8 +113,134 @@ li {
   flex-direction: column;
 }
 .the-form input[type=submit] {
+  margin: auto;
   margin-top: 20px;
-  padding: 5px 40px;
+  padding: 8px 0;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  width: 30%;
+  background-color: #ffd000;
+  border: none;
+}
+.the-form input[type=submit]:hover {
+  background-color: #ff9d00;
+  transition: background-color 1.5s;
+}
+.the-form input[type=text] {
+  padding: 8px 0;
+  text-indent: 5px;
+  width: 60%;
+  margin: auto;
+}
+
+.section-of-service {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 70%;
+}
+.section-of-service .div-of-service {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  margin: 25px 0;
+}
+.section-of-service .div-of-service .images {
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  margin-right: 60px;
+}
+.section-of-service .div-of-service div {
+  margin: 0;
+}
+.section-of-service .div-of-service div h2 {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+.section-of-service .div-of-service div p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.div-of-video {
+  margin: 40px auto;
+}
+
+.boxes-section {
+  display: flex;
+  flex-direction: row;
+  width: 68%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.boxes-section div {
+  border: solid black 1px;
+  border-radius: 3px;
+  height: 330px;
+  width: 31%;
+  margin: 0 auto;
+}
+.boxes-section div h3 {
+  background-color: #c3c3c3;
+  padding: 20px 10px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+.boxes-section div div {
+  margin-top: 20px;
+  border: none;
+  width: 100%;
+  text-align: center;
+}
+.boxes-section div div .money {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+.boxes-section div div ul li {
+  margin: 15px;
+}
+.boxes-section div div button {
+  background-color: #ffd000;
+  border: none;
+  margin-top: 20px;
+  padding: 10px 12px;
+  font-size: 15px;
+}
+.boxes-section div div button:hover {
+  background-color: #ff9d00;
+  transition: background-color 1.5s;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  background-color: #c3c3c3;
+  width: 68%;
+  margin: 0 auto;
+  margin-top: 50px;
+  flex-shrink: 0;
+  padding-bottom: 20px;
+  font-size: 17px;
+  font-family: Tahoma, "Trebuchet MS", sans-serif;
+}
+.footer-flex ul {
+  margin-left: auto;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.footer-flex ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.footer-flex p {
+  margin-left: auto;
+  margin-right: 15px;
+  margin-top: 7px;
+  color: #5a5a5a;
 }
 
 /*# sourceMappingURL=style.css.map */

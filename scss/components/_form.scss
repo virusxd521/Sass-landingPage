@@ -1,8 +1,9 @@
 .form-section{
-
+    margin: 0 $auto-display;
     h1{
         font-size: 25px;
-        padding-bottom: 20px;    
+        padding-bottom: 20px;
+        font-family: $headers-font;    
     
     }
 }
@@ -11,7 +12,20 @@
     @include display-flex(column);
 
     input[type="submit"]{
+        margin: $auto-display;
         margin-top: $twenty-px;
-        padding: 5px $forty-px;
+        padding: 8px 0;
+        font-size: 15px;
+        font-family: $headers-font;
+        width: 30%;
+        @include button-color-hover;
     }
+
+    input[type="text"]{
+        padding: 8px 0;
+        text-indent: 5px;
+        width: 60%;
+        margin: $auto-display;
+    }
+
 }

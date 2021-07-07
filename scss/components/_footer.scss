@@ -1,0 +1,29 @@
+.footer-flex{
+    @include display-flex(column);
+    background-color: $light-grey;
+    width: 68%;
+    margin: 0 $auto-display;
+    margin-top: 50px;
+    flex-shrink: 0;
+    padding-bottom: 20px;
+    font-size: 17px;
+    font-family: Tahoma, 'Trebuchet MS', sans-serif;
+
+
+    ul{
+        margin-left: $auto-display;
+        margin-top: $twenty-px;
+        margin-right: $twenty-px;
+        li{
+            display: $block-line;
+            margin-left: 10px;
+        }
+    }
+
+    p{
+        margin-left: $auto-display;
+        margin-right: 15px;
+        margin-top: 7px;
+        color: rgb(90, 90, 90);
+    }
+}

@@ -2,3 +2,13 @@
     display: $flex-display;
     flex-direction: $direction-of-flex;
 }
+
+@mixin button-color-hover(){
+    background-color: $buttons-background;
+    border: none;
+
+    &:hover{
+        background-color: $butons-hover-color;
+        transition: background-color 1.5s; 
+    }
+}
